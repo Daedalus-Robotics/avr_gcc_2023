@@ -1,0 +1,3 @@
+[submodule "extra_packages/avr_gcc_2023_interfaces"]
+	path = extra_packages/avr_gcc_2023_interfaces
+	url = https://github.com/Daedalus-Robotics/avr_gcc_2023_interfaces.git
