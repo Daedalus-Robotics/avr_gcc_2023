@@ -5,7 +5,9 @@
 #include <rclc/rclc.h>
 #include <rclc/executor.h>
 
-#define EXECUTOR_HANDLES 0
+#include "nodes/gimbal_motor_node.hpp"
+
+#define EXECUTOR_HANDLES ((SYSTEM_EXECUTOR_HANDLES + GIMBAL_MOTOR_NODE_EXECUTOR_HANDLES * 1) + 5)
 
 rcl_allocator_t allocator;
 rclc_support_t support;
