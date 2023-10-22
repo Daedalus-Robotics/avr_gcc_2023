@@ -50,5 +50,5 @@ FLASHMEM void setup()
 
 void loop()
 {
-    rclc_executor_spin_some(&executor, RCL_MS_TO_NS(10));
+    HANDLE_ROS_ERROR(rclc_executor_spin_some(&executor, RCL_MS_TO_NS(10)), false);
 }
